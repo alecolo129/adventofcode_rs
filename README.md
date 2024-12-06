@@ -21,7 +21,7 @@ git clone https://github.com/your-username/advent_of_code.git
 cd advent_of_code
 ```
 
-### Running Solution
+## Running Solution
 To run the solution for a specific day, use the following command:
 ```bash
 cargo run --package day_X
