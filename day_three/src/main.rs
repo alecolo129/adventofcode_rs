@@ -1,3 +1,6 @@
+/*
+    You can find the challenge description here: https://adventofcode.com/2024/day/3
+*/
 use std::fs::File;
 use std::io::{BufReader, BufRead, Seek, SeekFrom};
 

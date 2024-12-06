@@ -8,7 +8,6 @@ Each day of the event is organized as a separate binary project.
 Each project `day_X` has:
 - `main.rs`: The Rust program that solves the problem for the day.
 - `input.txt`: The input provided for the challenge.
-- `description.md`: A markdown file with the problem description.
 
 ## Getting Started
 

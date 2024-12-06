@@ -1,3 +1,6 @@
+/*
+    You can find the challenge description here: https://adventofcode.com/2024/day/5
+*/
 use std::collections::{HashMap, HashSet};
 use std::fs::File;
 use std::io::{BufRead, BufReader};
