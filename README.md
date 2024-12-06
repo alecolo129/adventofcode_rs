@@ -20,3 +20,13 @@ Make sure you have [Rust](https://www.rust-lang.org) installed on your system.
 git clone https://github.com/your-username/advent_of_code.git
 cd advent_of_code
 ```
+
+### Running Solution
+To run the solution for a specific day, use the following command:
+```bash
+cargo run --package day_X
+```
+replacing `day_X` with your day of choice (e.g., `day_one`). 
+
+## Acknowledgments 
+- Thanks to [Eric Wastl](https://x.com/ericwastl) for creating Advent of Code and preparing lots of fun challenges each year.
