@@ -25,7 +25,7 @@ fn parse(reader: &mut BufReader<File>) -> Result<HashMap<u64, u64>, Box<dyn Erro
 }
 
 fn part_one(stones_to_count: &mut HashMap<u64, u64>, n_blinks: u32) -> u64 {
-    (0..n_blinks).for_each(|i| {
+    (0..n_blinks).for_each(|_| {
         let stones_to_count_old = stones_to_count.clone();
         stones_to_count.clear();
 
@@ -37,8 +37,8 @@ fn part_one(stones_to_count: &mut HashMap<u64, u64>, n_blinks: u32) -> u64 {
                 // Split number in 2
                 if n_digits > 0 && (n_digits % 2) == 0 {
                     let base = 10u64.pow(n_digits >> 1);
-                    let rem = *num % base; //num[..n_digits >> 1].trim_start_matches('0').to_string();
-                    let div = num / base; //num[n_digits >> 1..].trim_start_matches('0').to_string();
+                    let rem = *num % base; 
+                    let div = num / base;
                     stones_to_count.entry(rem).and_modify(|old_count| *old_count += *count).or_insert(*count);
                     stones_to_count.entry(div).and_modify(|old_count| *old_count += *count).or_insert(*count);
                 }
@@ -50,7 +50,6 @@ fn part_one(stones_to_count: &mut HashMap<u64, u64>, n_blinks: u32) -> u64 {
 
                 // Multiply by 2024
                 else{
-                    // stones_to_count.remove(num);
                     stones_to_count.entry(num*2024).and_modify(|old_count| *old_count += *count).or_insert( *count); 
                 }
             });
